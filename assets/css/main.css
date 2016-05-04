@@ -47,7 +47,18 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
+	
+	/* p {
+		
+		font-family: Microsoft Yahei,sans-serif;
+		
+	} */
+	a:link,a:visited{
 
+		text-decoration:none;
+	
+	}
+	
 /* Box Model */
 
 	*, *:before, *:after {
@@ -2893,6 +2904,42 @@
 
 	#two {
 		background: url("images/overlay.png"), url("../../images/two.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Three */
+
+	#three {
+		background: url("images/overlay.png"), url("../../images/three.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+	
+/* Four */
+
+	#four {
+		background: url("images/overlay.png"), url("../../images/four.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Five */
+
+	#five {
+		background: url("images/overlay.png"), url("../../images/five.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+	
+/* Six */
+
+	#six {
+		background: url("images/overlay.png"), url("../../images/six.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;

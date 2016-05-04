@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Github 装生学|简明github安装调试教程</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="用简洁的话语辅以清楚明白的图片把git、github讲清楚、说明白。一个github安装、调试的图文教程，一个github ssh的安装解说教程。">
+		<meta name="keywords" content="git github git-ssh git安装 github系统 静态网页 github免费空间 github网站">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="icon" href="favicon.ico">
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+
+				<!-- Logo -->
+					<h1 id="logo"><a href="https://github.com/genghis-bai/github-zhuangbiology" target="_blank";>Github Zhuangbiology</a></h1>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro">首页</a></li>
+							<li><a href="#one">Github</a></li>
+							<li><a href="#two">装X秘笈</a></li>
+							<li><a href="#contact">与我联系</a></li>
+							<li><a href="../index.html">English</a></li>
+						</ul>
+					</nav>
+
+			</header>
+
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content container 75%">
+					<header>
+						<h2>Github</h2>
+						<h3>Hello It's me!</h3>
+					</header>
+					<p>            山重水复之际、斗转星移之间，人类已经电光火石般地冲进了物我难辨、真幻不分的年代。墙与不墙早已是不能再LOW的话题，而如果你还没有在宛若DOS般的指令框内<br/>敲出一行行代码的话，则只能证明一件事——<br/>你 O U T 了 ！</p>
+					<footer>
+						<a href="#one" class="button style2 down">More</a>
+					</footer>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Github 是什么</h2>
+					</header>
+					<p>Github是很牛的啦，几乎所有的人都在谈论它。不管你是不是搞程序、写代码的，反正弄一个这玩意儿上去FORK一下别人，推来推去，热闹得很。还有啊，好像全世界最牛掰的人都和它有关系。嗯，就是高逼格那种咯？大概是吧。它是什么，一句话说不清楚，你自己去百度谷歌一下吧！本Zhuangbiology只负责让小白从一头雾水到能顺利运转。百鸟在林不如一鸟在手，我们只从万千乱象（选择）中取一瓢饮。那么多人倒在前往Github的路上，原因就是有太多选择了。</p>
+				</div>
+				<a href="#two" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>装X秘笈之一</h2>
+					</header>
+					<p>除了到<a href="https://git-scm.com" target="_blank" style="color:#98c593;">git-scm.com</a>这里下载git环境外，不要再在任何地方下载任何东西到本地！别问为什么，这个对你有好处。选择和你本地操作系统对应的Git，下载完后就按默认设置一路点下去安装好。Git是个体系，而Github只是这个体系的一个具体应用平台而已。如果还没有在<a href="https://github.com" target="_blank" style="color:#98c593;">github.com</a>上注册，那么此时请到其官网注册一下。</p>
+				</div>
+				<a href="#three" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>装X秘笈之二</h2>
+					</header>
+					<p>如果你是按默认配置安装Git的，那么在桌面肯定就有一个这样的图标，否则你单击鼠标右键也能看到这个东西，Git Bash。双击Git Bash，就会弹出一个需要敲击指令代码的框框。Git Bash是你管理本地的Git系统及和远程平台例如Github沟通的桥梁，这里是Git信息的中枢管理机构。当然有不少其他方法也能达成其功能，但Git Bash是其本貌。操作代码行是Linux的本色之一，不意竟成装B武功范式，呜呼！</p>
+				</div>
+				<a href="#four" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Four -->
+			<section id="four" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>装X秘笈之三</h2>
+					</header>
+					<p>打开Git Bash，在$符号后输入ssh-keygen -t rsa -b 4096 敲回车（名字、邮箱之类的东西以后再折腾）。出现提示后别管直接敲回车，再出现提示后直接再敲回车，然后再敲回车。以上动作完成了SSH的公、私钥生成。把SSH配置好后，你每次和github.com搞对象时不需要验证身份，直接上。然后输入eval "$(ssh-agent -s)"回车然后再输入ssh-add ~/.ssh/id_rsa回车。到此把私钥安装妥当了。本部分内容之  <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" target="_blank" style="color:#98c593;">相关文档</a></p>
+				</div>
+				<a href="#five" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Five -->
+			<section id="five" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>装X秘笈之四</h2>
+					</header>
+					<p>此部分处理公钥。公钥和私钥相当于是虎符的两半。私钥掌握在你手里（藏在你本地的Git Bash里），公钥得配备在github.com上，这样当代表你的Git Bash持私钥访问你在github的账户时，github用保存在你账户的公钥（虎符的另一半）来验证访客的身份，如果是你是你就是你的话，那么直接放行，爱嘛嘛。请从你本地C盘的user下找到.ssh这个文件夹，用记事本打开id_rsa.pub这个文件，把内容拷贝到你github的账户里。如背景图如此这般。可参考<a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/" target="_blank" style="color:#98c593;">此处。</a></p>
+				</div>
+				<a href="#six" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Six -->
+			<section id="six" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>装X秘笈之五</h2>
+					</header>
+					<p>简单测试一下SSH是否配置好了。在$符号后输入ssh -T git@github.com并回车，如果看到You've successfully authenticated, but GitHub does not provide shell access 这句话，恭喜你！搞掂了！如果回应的末尾是带有(yes/no)?这样语句，直接输入yes并回车。如果不放心就再次输入ssh -T git@github.com 来确认。此部分<a href="https://help.github.com/articles/testing-your-ssh-connection/" target="_blank" style="color:#98c593;">可参考。</a>然后登入你的github账户，去建立你的第一个Repository吧。此处应该响起掌声！</p>
+				</div>
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section>
+			
+		<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content container">
+					<header>
+						<h2>装X秘笈之六</h2>
+						<p>以下内容纯属经验并来源于个人主观意识，如有异议，请心里憋着或以火星文回复~~</p>
+					</header>
+
+					<!-- Lightbox Gallery  -->
+						<div class="container 75% gallery">
+							<div class="row 0% images">
+								<div class="6u 12u(mobile)"><a href="images/fulls/01.jpg" class="image fit from-left"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a></div>
+								<div class="6u 12u(mobile)"><a href="images/fulls/02.jpg" class="image fit from-right"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a></div>
+							</div>
+							<div class="row 0% images">
+								<div class="6u 12u(mobile)"><a href="images/fulls/03.jpg" class="image fit from-left"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a></div>
+								<div class="6u 12u(mobile)"><a href="images/fulls/04.jpg" class="image fit from-right"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a></div>
+							</div>
+							<div class="row 0% images">
+								<div class="6u 12u(mobile)"><a href="images/fulls/05.jpg" class="image fit from-left"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a></div>
+								<div class="6u 12u(mobile)"><a href="images/fulls/06.jpg" class="image fit from-right"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a></div>
+							</div>
+						</div>
+
+				</div>
+			</section>
+
+		<!-- Contact -->
+			<section id="contact" class="main style3 secondary">
+				<div class="content container">
+					<header>
+						<h2>Hello Again</h2>
+						<p>欢迎访问 <a href="https://github.com/genghis-bai" target="_blank" style="color:#98c593;">github</a> 与我互动！或者使用以下表单给我发邮件吧！</p>
+					</header>
+					<div class="box container 75%">
+
+					<!-- Contact Form -->
+							<form action="https://formspree.io/1365244595@qq.com" method="post">
+								<div class="row 50%">
+									<div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Your Name" /></div>
+									<div class="6u 12u(mobile)"><input type="email" name="_replyto" placeholder="Your Email" /></div>
+								</div>
+								<div class="row 50%">
+									<div class="12u"><textarea name="message" placeholder="Please leave a message here" rows="6"></textarea></div>
+								</div>
+								<div class="row">
+									<div class="12u">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Icons -->
+					<ul class="actions">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>Powered by <a href="https://github.com/n33/skel">Skel</a> </li><li><a href="http://www.agandesign.com">AganDesign</a></li>
+					</ul>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

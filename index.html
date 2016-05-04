@@ -6,13 +6,16 @@
 -->
 <html>
 	<head>
-		<title>Big Picture by HTML5 UP</title>
+		<title>Easiest Way to set up Github</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="a simplest github setup tutorial, a github static website module.">
+		<meta name="keywords" content="git github github setup git-ssh github static website">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="icon" href="favicon.ico">
 	</head>
 	<body>
 
@@ -20,16 +23,16 @@
 			<header id="header">
 
 				<!-- Logo -->
-					<h1 id="logo">Big Picture</h1>
+					<h1 id="logo"><a href="https://github.com/genghis-bai/github-zhuangbiology" target="_blank";>Github Zhuangbiology</a></h1>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro">Intro</a></li>
-							<li><a href="#one">What I Do</a></li>
-							<li><a href="#two">Who I Am</a></li>
-							<li><a href="#work">My Work</a></li>
+							<li><a href="#intro">Home</a></li>
+							<li><a href="#one">What' up</a></li>
+							<li><a href="#two">Set up</a></li>
 							<li><a href="#contact">Contact</a></li>
+							<li><a href="chinese/chinese.html">中文</a></li>
 						</ul>
 					</nav>
 
@@ -39,11 +42,10 @@
 			<section id="intro" class="main style1 dark fullscreen">
 				<div class="content container 75%">
 					<header>
-						<h2>Hey.</h2>
+						<h2>Github</h2>
+						<h3>Hello It's me!</h3>
 					</header>
-					<p>Welcome to <strong>Big Picture</strong> a responsive site template designed
-					by <a href="http://html5up.net">HTML5 UP</a>, built on <strong><a href="http://getskel.com">Skel</a></strong>,
-					and released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>.</p>
+					<p>This is about a simple way to walk you through the pain of <strong>git</strong> and <strong>github</strong> setup. This is also a github static website with wonderful HTML,CSS and JavaScript.</p>
 					<footer>
 						<a href="#one" class="button style2 down">More</a>
 					</footer>
@@ -54,11 +56,9 @@
 			<section id="one" class="main style2 right dark fullscreen">
 				<div class="content box style2">
 					<header>
-						<h2>What I Do</h2>
+						<h2>What is Github?</h2>
 					</header>
-					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
-					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+					<p>Github is a website/service that we hear geeks rave about all the time. To understand Github, we must first have an understanding of Git. Git is an open-source version control system that was started by Linus Trovalds – the same person who created Linux. Because there're a lot of different ways to set up the git system, it's usually a painful journey for many nonprofessionals. so let's find an easier method to handle this issue and I'm sure you'll like it!</p>
 				</div>
 				<a href="#two" class="button style2 down anchored">Next</a>
 			</section>
@@ -67,23 +67,63 @@
 			<section id="two" class="main style2 left dark fullscreen">
 				<div class="content box style2">
 					<header>
-						<h2>Who I Am</h2>
+						<h2>Step One</h2>
 					</header>
-					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
-					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+					<p>We don't want to confuse you by diversity, although is really cool to have it. But at this moment, we just stick on one way. First of all, please go to <a href="https://git-scm.com" target="_blank" style="color:#98c593;">git-scm.com</a> to download the git package according to your local machine's operation system. Then, please execute it by default. Please don't change anything, just follow the default instructions. And if you haven't registered on <a href="https://github.com" target="_blank" style="color:#98c593;">github.com</a> yet, please do it.</p>
+				</div>
+				<a href="#three" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Step Two</h2>
+					</header>
+					<p>After the installation, you will have a Git Bash icon on the desk, double click it will bring a DOS window popup. Git Bash is the bridge between you and the remote end, github, for example. There're different ways to fulfill this function, but again, we stick on the original way, Git Bash. (Next step is SSH configuration, which will set up a special tunnel between you and github, it's a safe and password free way.)</p>
+				</div>
+				<a href="#four" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Four -->
+			<section id="four" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Step Three</h2>
+					</header>
+					<p>Open Git Bash and type "ssh-keygen -t rsa -b 4096" after the $ sign (without the quotation mark) and click return. We wouldn't consider the username and email right now, they can be handled later. The system will show different prompt messages, a simple way is ignoring them all and just click return until you have the the SSH private and public keys. Then type eval "$(ssh-agent -s)" and  return, continue to type ssh-add ~/.ssh/id_rsa and return. Private key setup has been finished by now. <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" target="_blank" style="color:#98c593;">Click here for more details</a></p>
+				</div>
+				<a href="#five" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Five -->
+			<section id="five" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Step Four</h2>
+					</header>
+					<p>Let's deal with the public key. Because the private key and public key were generated simultaneously, they just like the two sides of a coin. The private key stays at your local Git Bash, and the public key needs to be hold on the remote end, github.com. When your Git Bash visit your github account with the unique private key, the public key knows who it is and will let you through. Based on the background's steps to finish this part.(You can find the public key on the user's .ssh folder, open it with text or other editor.) <a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/" target="_blank" style="color:#98c593;">Click here for more details</a></p>
+				</div>
+				<a href="#six" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Six -->
+			<section id="six" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Step Five</h2>
+					</header>
+					<p>Type ssh -T git@github.com after the $ sign and return, if you see "You've successfully authenticated, but GitHub does not provide shell access", well done! You've made it! But if you see some sentences ending with "(yes/no)?", type yes and return. <a href="https://help.github.com/articles/testing-your-ssh-connection/" target="_blank" style="color:#98c593;">Click here for more details</a> And then login to your github account and create your first repository. Congratulations!</p>
 				</div>
 				<a href="#work" class="button style2 down anchored">Next</a>
 			</section>
-
+			
 		<!-- Work -->
 			<section id="work" class="main style3 primary">
 				<div class="content container">
 					<header>
-						<h2>My Work</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-						Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis
-						arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</p>
+						<h2>Step Six</h2>
+						<p>The first picture is copying your repository address to the clipboard. Since you have already set up the SSH <br/> and cloned the first repository to you local PC, the others are not that difficult, <br/>I am sure you will explore more and more Git orders to continue<br/> this interesting github journey. Cheers!</p>
 					</header>
 
 					<!-- Lightbox Gallery  -->
@@ -109,19 +149,19 @@
 			<section id="contact" class="main style3 secondary">
 				<div class="content container">
 					<header>
-						<h2>Say Hello.</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
+						<h2>Hello Again</h2>
+						<p>Welcome to visit my <a href="https://github.com/genghis-bai" target="_blank" style="color:#98c593;">github</a> or contact me by this form.</p>
 					</header>
 					<div class="box container 75%">
 
 					<!-- Contact Form -->
-							<form method="post" action="#">
+							<form action="https://formspree.io/1365244595@qq.com" method="post">
 								<div class="row 50%">
-									<div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u 12u(mobile)"><input type="email" name="email" placeholder="Email" /></div>
+									<div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Your Name" /></div>
+									<div class="6u 12u(mobile)"><input type="email" name="_replyto" placeholder="Your Email" /></div>
 								</div>
 								<div class="row 50%">
-									<div class="12u"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
+									<div class="12u"><textarea name="message" placeholder="Please leave a message here" rows="6"></textarea></div>
 								</div>
 								<div class="row">
 									<div class="12u">
@@ -151,7 +191,7 @@
 
 				<!-- Menu -->
 					<ul class="menu">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>Powered by <a href="https://github.com/n33/skel">Skel</a> </li><li><a href="http://www.agandesign.com">AganDesign</a></li>
 					</ul>
 
 			</footer>
