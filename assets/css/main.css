@@ -2852,7 +2852,8 @@
 		#logo a {
 			font-size: 1.25em;
 		}
-
+	
+	
 	#nav {
 		position: absolute;
 		right: 0.5em;
@@ -2880,7 +2881,8 @@
 					padding: 0 0.5em 0 0.5em;
 					outline: 0;
 				}
-
+		
+		
 /* Intro */
 
 	#intro {
@@ -3256,6 +3258,11 @@
 			.main.style2.inactive.left .content {
 				left: -40%;
 			}
+			
+			 #cn {
+		
+		display: none; 
+	}
 
 	}
 
@@ -3268,6 +3275,11 @@
 			body, input, textarea, select {
 				font-size: 15pt;
 			}
+			
+			 #cn {
+		
+		display: none;
+	} 
 
 	}
 
@@ -3294,6 +3306,11 @@
 			.main.style2.inactive.left .content {
 				left: -50%;
 			}
+			
+			#cn {
+		
+		display: none; 
+	}
 
 	}
 
@@ -3350,6 +3367,11 @@
 					height: auto;
 					line-height: inherit;
 				}
+				
+				#cn {
+		
+		display: none; 
+	}
 
 	}
 
@@ -3451,6 +3473,20 @@
 			}
 
 				#logo a {
+					font-size: 1em;
+				}
+				
+			 #cn {
+				
+				display: block;
+				position: absolute;
+				right: 1em;
+				top: 0;
+				font-size:0.8em;
+			
+			} 
+			
+			#cn a {
 					font-size: 1em;
 				}
 
